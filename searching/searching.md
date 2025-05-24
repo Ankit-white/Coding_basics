@@ -5,7 +5,7 @@ def binarysearch(arr,target):
     low=0
     high=len(arr)-1
     while low<=high:
-        mid=(low+high)//2
+        mid=(low+high)//2 #it will calculate the mid value by mean method
         if arr[mid] == target:
             return mid
         elif arr[mid] < target:
@@ -21,4 +21,21 @@ print(binarysearch(arr,1))
 
 
 
-febonacci series: 
+febonacci series: it is a sequence of number in which the number is sum of previous two numbers 
+
+
+
+
+def fabonacci (n):
+    feb = [0,1]
+    x = 0
+    for i in range (1,n):
+        x = feb[i] + feb[i-1]  #x is the the number we get when the previous two numbers are added
+        feb.append(x) # feb variable is added the numbers of x in the list
+    return feb
+        
+print(fabonacci (10) )
+
+
+
+Interpolation search:
