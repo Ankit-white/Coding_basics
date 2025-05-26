@@ -1,3 +1,14 @@
 Bubble sort : it is a sorting technique in which we will using a third variable and swaping the numbers within the loop 
-in this method we have several itreation in 1 itreation we will find out the largest number
-in second itreation last second highest it will goo on upto the array is sorted
+in this method we have several itreation in 1 itreation we will find out the largest number,
+in second itreation last second highest and  it will goo on upto the array is sorted
+
+def bubblesort(list):
+    for i in range(len(list)-1,0,-1): # i will run from right to left
+        for j in range(i):
+            if list[j]>list[j+1]: # it checks the number if the number is greater than it will swap
+                temp = list[j]
+                list[j]=list[j+1]
+                list[j+1]=temp
+    return list   # it will return the value 
+
+print(bubblesort([2,3,5,1,4,8,7]))  
