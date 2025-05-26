@@ -45,4 +45,4 @@ from this we will find middle position and we will run the the loop with a if st
 else we will change the low and high value with pos +1,pos - 1 .
 
 
-
+Linear search: it is a simple searching technique in which it will go in range of len of given array it will change the i value according to the range if the arr[i] == target it will return the i value i not loops contiue till the i will get the tareget positon
