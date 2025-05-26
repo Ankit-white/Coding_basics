@@ -12,3 +12,8 @@ def bubblesort(list):
     return list   # it will return the value 
 
 print(bubblesort([2,3,5,1,4,8,7]))  
+
+
+
+Insertion sort : it is a sorting technique in which it will swap the number without using third variable 
+deff between bubble sort and this is it will go from right to left but in bubble sort it will go from left to right _
