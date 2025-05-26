@@ -38,4 +38,11 @@ print(fabonacci (10) )
 
 
 
-Interpolation search:
+Interpolation search: it is kind of searching which is similar to the binary search where will find the pos value by a formula 
+pos = low + int(((high - low) - (arr[high]-arr[low])) * (target-arr[low]))
+
+from this we will find middle position and we will run the the loop with a if statment if arr[pos]==target we will return pos 
+else we will change the low and high value with pos +1,pos - 1 .
+
+
+
