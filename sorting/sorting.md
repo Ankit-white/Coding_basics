@@ -28,3 +28,16 @@ def insertionsort(arr):
             j -= 1
     return arr        
 print(insertionsort([2,3,5,4,6,8,7]))
+
+
+
+Merge sort: it is a sorting method technique in which it just divide and conquer the arr i.e it split the arr in half or it will divide to upto we get simplest form to solve and recursion takes place of merge sort and it will merge the two hals into a sorted arr
+
+
+
+
+
+
+
+
+
