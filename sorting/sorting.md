@@ -16,4 +16,15 @@ print(bubblesort([2,3,5,1,4,8,7]))
 
 
 Insertion sort : it is a sorting technique in which it will swap the number without using third variable 
-deff between bubble sort and this is it will go from right to left but in bubble sort it will go from left to right _
+deff between bubble sort and this is it will go from right to left but in bubble sort it will go from left to right 
+
+
+
+def insertionsort(arr):
+    for i in range(1,len(arr)): # i value will be commiting from right to left i.e 1 to lentgh of array
+        j=i
+        while arr[j-1]>arr[j] and j > 0: # it will check for 2 conditions arr[j-1]> arr[j] and j> 0 if both are true it will run the loop statements
+            arr[j-1],arr[j]=arr[j],arr[j-1]
+            j -= 1
+    return arr        
+print(insertionsort([2,3,5,4,6,8,7]))
