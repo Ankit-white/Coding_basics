@@ -34,6 +34,45 @@ print(insertionsort([2,3,5,4,6,8,7]))
 Merge sort: it is a sorting method technique in which it just divide and conquer the arr i.e it split the arr in half or it will divide to upto we get simplest form to solve and recursion takes place of merge sort and it will merge the two hals into a sorted arr
 
 
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2 # from this we get mid number for spliting
+        left_arr = arr[:mid]
+        right_arr = arr[mid:]
+
+        merge_sort(left_arr)
+        merge_sort(right_arr) # in this we recursive the merge sort i.e recall the function within the function
+
+        i = j = k = 0
+
+        # Merge the sorted halves
+        while i < len(left_arr) and j < len(right_arr):
+            if left_arr[i] < right_arr[j]:
+                arr[k] = left_arr[i]
+                i += 1
+            else:
+                arr[k] = right_arr[j]
+                j += 1
+            k += 1
+
+        # Copy any remaining elements of left_arr
+        while i < len(left_arr):
+            arr[k] = left_arr[i]
+            i += 1
+            k += 1
+
+        # Copy any remaining elements of right_arr
+        while j < len(right_arr):
+            arr[k] = right_arr[j]
+            j += 1
+            k += 1
+
+# Test the function
+arr_test = [2, 5, 6, 3, 7, 4, 3, 8, 1]
+merge_sort(arr_test)
+print(arr_test)
+
+
 
 
 
